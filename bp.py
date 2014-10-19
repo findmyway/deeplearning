@@ -39,7 +39,7 @@ class NeuralNetwork():
 
 
 if __name__ == '__main__':
-    nn = NeuralNetwork([700, 30, 10])
+    nn = NeuralNetwork([784, 30, 10])
     nn.train(x_train, y_train)
     predicty = nn.predict(x_test)
     print(np.sum(predicty == y_test))
